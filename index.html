@@ -5,36 +5,51 @@
     <title>Alexander Holman | Guessing Game</title>
     <link rel="stylesheet" href="normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400italic,700italic,800italic,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main-2.css">
   </head>
+
   <body> 
     <header>
-      <a href="test.html" id= "logo">
-        <h1>The Number Guessing Game</h1>
-        <h2>Having a bad day?  Guess a number and make it better!</h2>
-      </a>
+          <h1 id="title">The Number Guessing Game</h1>
+          <h2>Having a bad day?  Guess a number and make it better!</h2>
     </header>
-    <div id="wrapper">
+    <br>
+    <br>
       <section>
+      <br>
         <form>
-        Input your Guess Here:<br>
-        <input type="text" name="firstname">
+          Input your Guess Here:<br>
+          <input id="guess_input" type="text" value="Enter your guess here!">
         </form>
         <br>
-        <button type="button" id="submit">Submit the Guess</button>
       </section>
       <br>
       <section>
-        <form>
-        <button type="button" id="newgame">Start a New Game</button>
-      <br>
-      <p1>
-        Welcome to the guessing game!  Guess a game between 1-100
-      </p1>
+          <form>
+            <button type="button" id="submit">Submit the Guess</button>
+            <button type="button" id="newgame">Start a New Game</button>
+            <br>
+            <br>
+            <p>
+            Welcome to the guessing game!  Guess a number between 1-100
+            </p>
+        </form>
       </section>
-      <footer>
-      </footer>
-    </div>  
+      <div id="wrapper">
+        <button type="button" id="hint" class="button">Click for a hint!</button>
+        <button type="button" id="getAnswer" class="button">Give Up? Get the answer!</button>
+      </div>  
+      <section id="hint_button">
+          <form>
+            <p id="guessOuput"></p>
+            <p id="numGuessesOutput"></p>
+            <p id="whichGuesses"></p>
+            <p id="hotOutput"></p> 
+          </form>
+      </section>
+      <p id="exclamation"></p>
+    <script src="jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="firstJS.js"></script> 
   </body>
 </html>
 
